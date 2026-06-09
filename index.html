@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="tehfalcon builds clear interfaces, reliable systems, and useful things for the web."
+    />
+    <meta name="theme-color" content="#07090b" />
+    <title>tehfalcon | Developer</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="tehfalcon, back to top">
+        <svg class="wordmark-mark" viewBox="0 0 44 44" aria-hidden="true">
+          <path d="M4 10h19l12 8-9 3-6 13-6-10-6-4Z" />
+          <path d="m8 15 19 1-13 8M20 24l6-3" />
+        </svg>
+        <span>TEHFALCON</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span>Menu</span>
+        <span class="menu-lines" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero section-shell">
+        <div class="hero-copy reveal">
+          <h1>I make<br />useful things<br />for the web.</h1>
+          <p>
+            A developer focused on clear interfaces, reliable systems, and ideas worth shipping.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">
+              See my work
+              <span aria-hidden="true">→</span>
+            </a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/tehfalcon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal" aria-hidden="true">
+          <svg class="falcon-art" viewBox="0 0 660 590">
+            <g class="art-grid">
+              <path d="M40 296h580M330 28v534" />
+              <circle cx="330" cy="296" r="205" />
+              <circle cx="330" cy="296" r="128" />
+            </g>
+            <path
+              class="art-coral"
+              d="M87 290 193 181l119-33 130 74-71 9 64 46-91 2 73 55-111-29-65 126-9-151-92 77 52-121Z"
+            />
+            <path
+              class="art-blue"
+              d="m87 290 145-10 74 25 65-74M241 431l65-126 111 29M193 181l39 99 80-132"
+            />
+            <path class="art-eye" d="M188 238h37l-19 19Z" />
+            <g class="art-dots">
+              <circle cx="513" cy="110" r="3" />
+              <circle cx="536" cy="110" r="3" />
+              <circle cx="559" cy="110" r="3" />
+              <circle cx="513" cy="133" r="3" />
+              <circle cx="536" cy="133" r="3" />
+              <circle cx="559" cy="133" r="3" />
+              <circle cx="513" cy="156" r="3" />
+              <circle cx="536" cy="156" r="3" />
+              <circle cx="559" cy="156" r="3" />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section id="about" class="about section-shell">
+        <div class="section-label reveal">About</div>
+        <div class="about-copy reveal">
+          <h2><em>Curious</em> by default.<br />Precise when it <em>counts.</em></h2>
+          <p>
+            I enjoy turning fuzzy problems into simple, durable experiences, from the first sketch
+            to the final commit.
+          </p>
+        </div>
+        <div class="about-orbit reveal" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section id="work" class="work section-shell">
+        <div class="work-heading reveal">
+          <div>
+            <div class="section-label">Work</div>
+            <h2>Selected work</h2>
+          </div>
+          <p>A few things I’ve built, explored, or improved.</p>
+        </div>
+
+        <div class="project-list">
+          <a class="project reveal" href="https://github.com/tehfalcon" target="_blank" rel="noreferrer">
+            <span class="project-number">01</span>
+            <span class="project-copy">
+              <strong>Project One</strong>
+              <span>A focused description of the problem, the approach, and what changed.</span>
+            </span>
+            <span class="project-meta">Web</span>
+            <span class="project-link">View project <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="project reveal" href="https://github.com/tehfalcon" target="_blank" rel="noreferrer">
+            <span class="project-number">02</span>
+            <span class="project-copy">
+              <strong>Project Two</strong>
+              <span>A focused description of the problem, the approach, and what changed.</span>
+            </span>
+            <span class="project-meta">Tool</span>
+            <span class="project-link">View project <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="project reveal" href="https://github.com/tehfalcon" target="_blank" rel="noreferrer">
+            <span class="project-number">03</span>
+            <span class="project-copy">
+              <strong>Project Three</strong>
+              <span>A focused description of the problem, the approach, and what changed.</span>
+            </span>
+            <span class="project-meta">Experiment</span>
+            <span class="project-link">View project <span aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section-shell">
+        <div class="contact-copy reveal">
+          <div class="section-label">Contact</div>
+          <h2>Let’s make<br />something <em>useful.</em></h2>
+          <p>Have an idea, a tricky problem, or just want to compare notes? Say hello.</p>
+          <a class="email-link" href="mailto:hello@example.com">
+            Send an email
+            <span aria-hidden="true">→</span>
+          </a>
+          <div class="social-links">
+            <a href="https://github.com/tehfalcon" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <div class="flight-art reveal" aria-hidden="true">
+          <svg viewBox="0 0 620 620">
+            <path class="flight-coral" d="M73 251 169 192l94 27 146-179-45 174 61-94-45 179-117-80-59 72-80-9Z" />
+            <path class="flight-coral" d="m263 219 71 105 46-25M169 192l35 99M124 282l80 9 59-72" />
+            <path class="flight-blue" d="M246 356c75 34 99 75 65 125-24 35-14 73 18 91" />
+            <path class="flight-coral flight-dash" d="M246 356c34 19 45 44 30 76-9 19-5 40 17 56" />
+            <circle class="flight-coral" cx="277" cy="432" r="8" />
+            <circle class="flight-blue" cx="329" cy="572" r="8" />
+          </svg>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="wordmark" href="#top">
+        <svg class="wordmark-mark" viewBox="0 0 44 44" aria-hidden="true">
+          <path d="M4 10h19l12 8-9 3-6 13-6-10-6-4Z" />
+          <path d="m8 15 19 1-13 8M20 24l6-3" />
+        </svg>
+        <span>TEHFALCON</span>
+      </a>
+      <p>Built with care and plain old web standards.</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
