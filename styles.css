@@ -276,7 +276,8 @@ h2 span {
 }
 
 .credential-car .vw-mark {
-  stroke-width: 1.8;
+  fill: currentColor;
+  stroke: none;
 }
 
 .credential-car .audi-rings {
@@ -364,6 +365,18 @@ h2 span {
   left: 50%;
   z-index: 2;
   width: min(112%, 720px);
+  -webkit-mask-image: radial-gradient(
+    ellipse 67% 62% at 52% 50%,
+    #000 52%,
+    rgba(0, 0, 0, 0.9) 68%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 67% 62% at 52% 50%,
+    #000 52%,
+    rgba(0, 0, 0, 0.9) 68%,
+    transparent 100%
+  );
   mix-blend-mode: screen;
   transform: translate(-50%, -50%);
   animation: float 7s ease-in-out infinite;
