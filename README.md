@@ -1,15 +1,12 @@
-# tehfalcon landing page
+# Teh Falcon landing page
 
-A lightweight personal landing page built with plain HTML, CSS, and JavaScript.
+A lightweight personal landing page for embedded systems and automotive technology work, built
+with plain HTML, CSS, and JavaScript.
 
 ## Customize
 
-Before publishing, update:
-
-- Project names, descriptions, and links in `index.html`
-- `hello@example.com` with your email address
-- The LinkedIn URL
-- The page title and description if you want different wording
+Project information is sourced from the public
+[`tehfalcon-vw`](https://github.com/tehfalcon-vw) GitHub profile.
 
 ## Preview locally
 
