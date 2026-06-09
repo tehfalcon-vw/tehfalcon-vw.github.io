@@ -1168,10 +1168,6 @@ h2 span {
     font-size: 1.55rem;
   }
 
-  .site-footer {
-    flex-direction: column;
-    gap: 1rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
