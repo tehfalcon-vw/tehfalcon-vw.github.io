@@ -82,7 +82,7 @@
           <div class="orbital orbital-one"></div>
           <div class="orbital orbital-two"></div>
           <span class="coordinate coordinate-a">CAN // 500K</span>
-          <span class="coordinate coordinate-b">STM32 // ZEPHYR</span>
+          <span class="coordinate coordinate-b">STM32 // CAN BUS</span>
           <img src="./assets/teh-falcon-mark.png" alt="Teh Falcon multicolor geometric falcon" />
         </div>
 
@@ -136,15 +136,18 @@
             rel="noreferrer"
           >
             <span class="project-number">01</span>
-            <span class="project-visual project-visual-mib">
-              <span class="screen">NAV // AUDIO // MFD</span>
-              <i></i><i></i><i></i>
+            <span class="project-visual">
+              <img
+                src="./assets/project-mib2.jpg"
+                alt="MIB2 infotainment unit installed in a Volkswagen dashboard"
+              />
+              <span class="image-code">MIB2 // CAN BRIDGE</span>
             </span>
             <span class="project-copy">
               <strong>MIB2 CAN BRIDGE</strong>
               <span>
-                A Teensy 4.0 dual-CAN bridge restoring brightness, MFD display, navigation text, and
-                steering controls in older Volkswagens.
+                A teensy can bridge restoring brightness control, MFD display, and MFSW control in
+                pre 2010 Volkswagens.
               </span>
             </span>
             <span class="project-stack">C++ / TEENSY 4.0 / DUAL CAN</span>
@@ -158,19 +161,21 @@
             rel="noreferrer"
           >
             <span class="project-number">02</span>
-            <span class="project-visual project-visual-cluster">
-              <i class="gauge gauge-left"></i>
-              <i class="display">8P → 8U</i>
-              <i class="gauge gauge-right"></i>
+            <span class="project-visual">
+              <img
+                src="./assets/project-cluster.jpg"
+                alt="Audi 8U Q3 instrument cluster operating in an Audi A3 8P"
+              />
+              <span class="image-code">8P // 8U CLUSTER</span>
             </span>
             <span class="project-copy">
               <strong>8P TO 8U CLUSTER</strong>
               <span>
-                STM32 and Zephyr firmware translating Audi A3 8P controls for an Audi 8U Q3
-                instrument cluster.
+                STM32 firmware allowing Audi 8U Q3 Instrument Cluster functionality and control in
+                an Audi A3 8P.
               </span>
             </span>
-            <span class="project-stack">C / STM32 / ZEPHYR</span>
+            <span class="project-stack">C / STM32 / CAN BUS</span>
             <span class="project-arrow" aria-hidden="true">→</span>
           </a>
 
@@ -181,17 +186,20 @@
             rel="noreferrer"
           >
             <span class="project-number">03</span>
-            <span class="project-visual project-visual-wheel">
-              <i>MODE</i><i>VOICE</i><i>MUTE</i><i>OK</i>
+            <span class="project-visual">
+              <img
+                src="./assets/project-swcm.jpg"
+                alt="Audi steering wheel fitted with multifunction controls"
+              />
+              <span class="image-code">1K0 // SWCM</span>
             </span>
             <span class="project-copy">
               <strong>1K0 AUDI SWCM FIX</strong>
               <span>
-                CAN translation firmware mapping VW steering wheel events into Audi-compatible
-                commands.
+                STM32 firmware translating VW SWCM CAN commands into Audi-compatible commands.
               </span>
             </span>
-            <span class="project-stack">C / STM32 / ZEPHYR</span>
+            <span class="project-stack">C / STM32 / CAN BUS</span>
             <span class="project-arrow" aria-hidden="true">→</span>
           </a>
         </div>

@@ -583,16 +583,61 @@ h2 span {
 
 .project-visual {
   position: relative;
-  display: grid;
-  place-items: center;
   overflow: hidden;
   border-right: 1px solid var(--line);
   border-left: 1px solid var(--line);
+  background: #080909;
+}
+
+.project-visual::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
   background:
-    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px),
-    #080909;
-  background-size: 22px 22px;
+    linear-gradient(90deg, rgba(11, 11, 11, 0.12), transparent 45%, rgba(220, 255, 69, 0.08)),
+    linear-gradient(180deg, transparent 45%, rgba(11, 11, 11, 0.82));
+  box-shadow: inset 0 0 0 1px rgba(220, 255, 69, 0.08);
+}
+
+.project-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.55) contrast(1.14) brightness(0.72);
+  transform: scale(1.03);
+  transition: filter 300ms ease, transform 400ms ease;
+}
+
+.project:nth-child(1) .project-visual img {
+  object-position: center 58%;
+}
+
+.project:nth-child(2) .project-visual img {
+  object-position: center 52%;
+}
+
+.project:nth-child(3) .project-visual img {
+  object-position: center 43%;
+}
+
+.project:hover .project-visual img {
+  filter: saturate(0.9) contrast(1.08) brightness(0.9);
+  transform: scale(1.075);
+}
+
+.image-code {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.7rem;
+  z-index: 2;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid rgba(220, 255, 69, 0.65);
+  background: rgba(11, 11, 11, 0.78);
+  color: var(--acid);
+  font-family: monospace;
+  font-size: 0.52rem;
+  letter-spacing: 0.08em;
 }
 
 .project-copy {
@@ -636,66 +681,6 @@ h2 span {
 
 .project:hover .project-arrow {
   transform: translateX(6px);
-}
-
-.project-visual-mib .screen {
-  position: relative;
-  z-index: 2;
-  padding: 1.2rem 1.6rem;
-  border: 1px solid var(--cyan);
-  color: var(--cyan);
-  font-family: monospace;
-  font-size: 0.6rem;
-  box-shadow: inset 0 0 30px rgba(0,201,242,.12);
-}
-
-.project-visual-mib i {
-  position: absolute;
-  width: 42%;
-  height: 1px;
-  background: var(--acid);
-  transform-origin: left;
-}
-
-.project-visual-mib i:nth-child(2) { transform: rotate(25deg); }
-.project-visual-mib i:nth-child(3) { transform: rotate(-25deg); }
-.project-visual-mib i:nth-child(4) { width: 1px; height: 65%; }
-
-.project-visual-cluster {
-  display: flex;
-  gap: 1.2rem;
-}
-
-.gauge {
-  width: 68px;
-  height: 68px;
-  border: 2px solid #ddd;
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 6px #151515, inset 0 0 0 7px #4f4f4d;
-}
-
-.display {
-  padding: 0.7rem;
-  border: 1px solid var(--orange);
-  color: var(--orange);
-  font-family: monospace;
-  font-size: 0.62rem;
-  font-style: normal;
-}
-
-.project-visual-wheel {
-  grid-template-columns: repeat(2, 66px);
-  gap: 0.7rem;
-}
-
-.project-visual-wheel i {
-  padding: 0.8rem 0.4rem;
-  border: 1px solid #555;
-  color: #aaa;
-  font-family: monospace;
-  font-size: 0.55rem;
-  font-style: normal;
-  text-align: center;
 }
 
 .about {
@@ -1028,15 +1013,31 @@ h2 span {
   .project {
     grid-template-columns: 46px 1fr 42px;
     min-height: auto;
-    padding-block: 1.5rem;
+    padding-block: 0;
   }
 
   .project-visual {
-    display: none;
+    display: block;
+    grid-column: 2 / -1;
+    grid-row: 1;
+    height: 180px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .project-number {
+    grid-row: 1 / 3;
   }
 
   .project-copy {
-    padding: 0 1rem;
+    grid-column: 2;
+    grid-row: 2;
+    padding: 1.5rem 1rem;
+  }
+
+  .project-arrow {
+    grid-column: 3;
+    grid-row: 2;
   }
 
   .project-copy strong {
