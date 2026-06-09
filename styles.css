@@ -1044,8 +1044,13 @@ h2 span {
   }
 
   .hero-object {
-    min-height: 390px;
-    margin-top: 0;
+    min-height: 360px;
+    margin-top: -0.5rem;
+  }
+
+  .hero-object img {
+    top: 47%;
+    width: min(104%, 365px);
   }
 
   .orbital-one { width: 330px; height: 330px; }
