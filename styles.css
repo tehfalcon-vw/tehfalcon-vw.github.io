@@ -454,25 +454,6 @@ h2 span {
   animation: spin 28s linear infinite;
 }
 
-.coordinate {
-  position: absolute;
-  z-index: 3;
-  color: var(--muted);
-  font-family: monospace;
-  font-size: 0.62rem;
-  letter-spacing: 0.1em;
-}
-
-.coordinate-a {
-  top: 14%;
-  right: 9%;
-}
-
-.coordinate-b {
-  bottom: 17%;
-  left: 3%;
-}
-
 .scroll-cue {
   position: absolute;
   bottom: 1.5rem;
@@ -1069,7 +1050,6 @@ h2 span {
 
   .orbital-one { width: 330px; height: 330px; }
   .orbital-two { width: 235px; height: 235px; }
-  .coordinate { display: none; }
 
   .systems {
     min-height: auto;
