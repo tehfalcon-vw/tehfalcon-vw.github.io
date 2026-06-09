@@ -345,6 +345,22 @@ h2 span {
 .hero-object {
   position: relative;
   min-height: 650px;
+  isolation: isolate;
+}
+
+.hero-object::before {
+  position: absolute;
+  inset: 8% 2% 5%;
+  z-index: 1;
+  border-radius: 50%;
+  content: "";
+  background: radial-gradient(
+    ellipse at 52% 49%,
+    rgba(0, 0, 0, 0.18) 0 38%,
+    rgba(11, 11, 11, 0.74) 64%,
+    var(--bg) 84%
+  );
+  filter: blur(24px);
 }
 
 .hero-object::after {
@@ -366,16 +382,18 @@ h2 span {
   z-index: 2;
   width: min(112%, 720px);
   -webkit-mask-image: radial-gradient(
-    ellipse 67% 62% at 52% 50%,
-    #000 52%,
-    rgba(0, 0, 0, 0.9) 68%,
-    transparent 100%
+    ellipse 62% 57% at 53% 50%,
+    #000 43%,
+    rgba(0, 0, 0, 0.92) 56%,
+    rgba(0, 0, 0, 0.42) 72%,
+    transparent 91%
   );
   mask-image: radial-gradient(
-    ellipse 67% 62% at 52% 50%,
-    #000 52%,
-    rgba(0, 0, 0, 0.9) 68%,
-    transparent 100%
+    ellipse 62% 57% at 53% 50%,
+    #000 43%,
+    rgba(0, 0, 0, 0.92) 56%,
+    rgba(0, 0, 0, 0.42) 72%,
+    transparent 91%
   );
   mix-blend-mode: screen;
   transform: translate(-50%, -50%);
