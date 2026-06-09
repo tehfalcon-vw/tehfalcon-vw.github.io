@@ -1084,6 +1084,10 @@ h2 span {
     font-size: clamp(3.6rem, 16vw, 5rem);
   }
 
+  .section-heading {
+    display: block;
+  }
+
   .systems-map {
     aspect-ratio: 0.85;
   }
