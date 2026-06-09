@@ -105,8 +105,9 @@ a {
 .brand img {
   width: 44px;
   height: 44px;
-  object-fit: cover;
+  object-fit: contain;
   mix-blend-mode: screen;
+  transform: scale(1.22);
 }
 
 .site-nav {
@@ -253,6 +254,25 @@ h2 span {
   font-family: var(--display);
   font-size: 1.6rem;
   font-style: normal;
+}
+
+.credentials .credential-car {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  place-items: center;
+}
+
+.credential-car svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.6;
 }
 
 .hero-actions {
@@ -618,7 +638,7 @@ h2 span {
 }
 
 .project:nth-child(3) .project-visual img {
-  object-position: center 43%;
+  object-position: center 52%;
 }
 
 .project:hover .project-visual img {
