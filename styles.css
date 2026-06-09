@@ -258,9 +258,9 @@ h2 span {
 
 .credentials .credential-car {
   display: grid;
-  width: 30px;
+  width: 58px;
   height: 30px;
-  flex: 0 0 30px;
+  flex: 0 0 58px;
   place-items: center;
 }
 
@@ -272,7 +272,15 @@ h2 span {
   stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 1.6;
+  stroke-width: 1.55;
+}
+
+.credential-car .vw-mark {
+  stroke-width: 1.8;
+}
+
+.credential-car .audi-rings {
+  stroke-width: 1.35;
 }
 
 .hero-actions {

@@ -51,17 +51,25 @@
           <h1>BRIDGING OLD<br />SYSTEMS WITH<br />NEW IDEAS<span>.</span></h1>
           <p>
             Apple-certified technician, registered Apple developer, and VW/Audi specialist building
-            embedded tools for the cars and systems I know best.
+            embedded tools for connected vehicle systems.
           </p>
 
           <div class="credentials" aria-label="Experience">
-            <span><i aria-hidden="true">01</i> MAC TECH<br />SINCE 2012</span>
-            <span><i aria-hidden="true">02</i> APPLE DEV<br />SINCE 2019</span>
+            <span><i aria-hidden="true">01</i> MAC REPAIR<br />SINCE 2012</span>
+            <span><i aria-hidden="true">02</i> DEVELOPER<br />SINCE 2019</span>
             <span>
               <i class="credential-car" aria-hidden="true">
-                <svg viewBox="0 0 32 32">
-                  <circle cx="16" cy="16" r="13" />
-                  <path d="m8 8 8 10 8-10M9 19l7 7 7-7M16 18v8" />
+                <svg viewBox="0 0 68 32">
+                  <g class="vw-mark">
+                    <circle cx="16" cy="16" r="13.25" />
+                    <path d="m7.6 7.7 8.4 10.8 8.4-10.8M8.5 19.2 16 27l7.5-7.8M16 18.5V27" />
+                  </g>
+                  <g class="audi-rings">
+                    <circle cx="38" cy="16" r="6.2" />
+                    <circle cx="46" cy="16" r="6.2" />
+                    <circle cx="54" cy="16" r="6.2" />
+                    <circle cx="62" cy="16" r="6.2" />
+                  </g>
                 </svg>
               </i>
               VW / AUDI<br />EXPERT
@@ -90,7 +98,6 @@
           <div class="orbital orbital-one"></div>
           <div class="orbital orbital-two"></div>
           <span class="coordinate coordinate-a">CAN // 500K</span>
-          <span class="coordinate coordinate-b">STM32 // CAN BUS</span>
           <img src="./assets/teh-falcon-mark.png" alt="Teh Falcon multicolor geometric falcon" />
         </div>
 
@@ -154,8 +161,8 @@
             <span class="project-copy">
               <strong>MIB2 CAN BRIDGE</strong>
               <span>
-                A teensy can bridge restoring brightness control, MFD display, and MFSW control in
-                pre 2010 Volkswagens.
+                A Teensy CAN bridge restoring brightness control, MFD display, and MFSW control in
+                pre-2010 Volkswagens.
               </span>
             </span>
             <span class="project-stack">C++ / TEENSY 4.0 / DUAL CAN</span>
@@ -179,11 +186,11 @@
             <span class="project-copy">
               <strong>8P TO 8U CLUSTER</strong>
               <span>
-                STM32 firmware allowing Audi 8U Q3 Instrument Cluster functionality and control in
+                STM32 firmware allowing Audi 8U Q3 instrument cluster functionality and control in
                 an Audi A3 8P.
               </span>
             </span>
-            <span class="project-stack">C / STM32 / CAN BUS</span>
+            <span class="project-stack">C / STM32 / SINGLE CAN</span>
             <span class="project-arrow" aria-hidden="true">→</span>
           </a>
 
@@ -204,10 +211,11 @@
             <span class="project-copy">
               <strong>1K0 AUDI SWCM FIX</strong>
               <span>
-                STM32 firmware translating VW SWCM CAN commands into Audi-compatible commands.
+                STM32 firmware translating VW 1K0 SWCM MFSW CAN commands into Audi-compatible
+                commands.
               </span>
             </span>
-            <span class="project-stack">C / STM32 / CAN BUS</span>
+            <span class="project-stack">C / STM32 / SINGLE CAN</span>
             <span class="project-arrow" aria-hidden="true">→</span>
           </a>
         </div>
